@@ -1,0 +1,107 @@
+
+
+
+
+{% extends 'nav.html' %}
+{% block body_block%}
+
+<form action="" method="POST" >
+    {% csrf_token %}
+
+  <div class="card" style="width:60% ;margin-left:20%;margin-top:50px;" >
+
+        <div style="padding:100px;">
+          <h1 class="b-5 ">Parking Registration Form</h1>
+            <br>
+
+
+             <div class="input-group">
+                 <div class="input-group-prepend">
+              <span class="input-group-text" id="">Stuff ID</span>
+                 </div>
+                 <input type="text" class="form-control" name="stuff_id" required>
+
+
+             </div>
+            <p></p>
+            <p></p>
+            <div class="input-group">
+                 <div class="input-group-prepend">
+              <span class="input-group-text" id="">Full Name</span>
+                 </div>
+                 <input type="text" class="form-control" name="full_name">
+
+
+             </div>
+             <p></p>
+            <p></p>
+               <div class="input-group">
+                 <div class="input-group-prepend">
+              <span class="input-group-text" id="" >Department</span>
+                 </div>
+                  <select class="browser-default custom-select" id="department" name="department" style="width:50%; float:right">
+                      <option selected>Select</option>
+                      <option value="HR">HR</option>
+                      <option value="Finance and Planning">Finance and Planning</option>
+                      <option value="Commercial Department">Commercial Department</option>
+                      <option value="MIS Department">MIS Department</option>
+                      <option value="Training">Training</option>
+             </select>
+
+
+             </div>
+             <p></p>
+            <p></p>
+             <div class="input-group">
+                 <div class="input-group-prepend">
+              <span class="input-group-text" id="">Phone Number</span>
+                 </div>
+                 <input type="text" class="form-control" name="phone_no">
+
+
+             </div>
+             <p></p>
+            <p></p>
+             <div class="input-group">
+                 <div class="input-group-prepend">
+              <span class="input-group-text" id="">Designation</span>
+                 </div>
+                 <input type="text" class="form-control" name="designation">
+
+
+             </div>
+             <p></p>
+            <p></p>
+             <div class="input-group">
+                 <div class="input-group-prepend">
+              <span class="input-group-text" id="" >Vehicle Registration Number</span>
+                 </div>
+                 <input type="text" class="form-control" name="vehicle_number">
+
+
+             </div>
+             <p></p>
+            <p></p>
+
+
+             <div class="input-group">
+                 <div class="input-group-prepend">
+              <span class="input-group-text" id="" >Vehicle Type</span>
+                 </div>
+                  <select class="browser-default custom-select" id="vehicle" name="vehicle" style="width:50%; float:right">
+                      <option selected>Select</option>
+                      <option value="Car">Car</option>
+                      <option value="Motor Bike">Motor Bike</option>
+                      <option value="Motor Bike">Pickup Van</option>
+             </select>
+
+
+             </div>
+            <p></p>
+            <p></p>
+            <button style="float:right" type="submit" class="btn btn-outline-success">Sign Up</button>
+        </div>
+  </div>
+    <br>
+</form>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% include 'nav.html' %}
+<body>
+
+ <div class="container mt-5 " >
+
+     <form action="{% url 'parking' %}" method="POST">
+     {% csrf_token %}
+         <div class="container">
+         <div class="card" style="width:60% ;margin-left:20%;margin-top:50px;" >
+
+
+             <div style="padding:100px;">
+                 <div class="input-group">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="">Registration Number</span>
+                    </div>
+                    <input type="text" class="form-control" name="reginumber" id="reginumber" required >
+
+
+                 </div>
+                 <div class="mt-5 ">
+                     <button type="submit" class="btn btn-success" name="entry">Entry</button>
+                     <button type="submit" style="float:right"  class="btn btn-danger"  name="exit">Exit</button>
+                 </div>
+
+             </div>
+         </div>
+         </div>
+
+         </form>
+
+ </div>
+</body>

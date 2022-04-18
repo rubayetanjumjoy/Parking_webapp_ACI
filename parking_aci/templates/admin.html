@@ -1,0 +1,40 @@
+{% extends 'nav.html' %}
+{% block body_block%}
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+<from action="" method="POST">
+<div class="container">
+
+
+<div class="row justify-content-md-center mt-5">
+	<aside class="col-sm-4">
+
+<div class="card">
+<article class="card-body">
+
+<h4 class="card-title mb-4 mt-1">Admin</h4>
+	 <form>
+    <div class="form-group">
+    	<label>Username</label>
+        <input name="" class="form-control" type="name">
+    </div> <!-- form-group// -->
+    <div class="form-group">
+
+    	<label>Password</label>
+        <input class="form-control"  type="password">
+    </div> <!-- form-group// -->
+    <div class="form-group">
+
+    </div> <!-- form-group// -->
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+    </div> <!-- form-group// -->
+         <div class="form-group">
+             <a href="{% url 'registration' %}"><button type="button"  class="btn btn-red btn-block"> Registration  </button></a>
+    </div>
+</form>
+</article>
+</div>
+</from>
+{% endblock %}
